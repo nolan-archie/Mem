@@ -1,4 +1,4 @@
-Mainmi is a local AI framework designed to simulate a self-aware, adaptive assistant that can think, remember, and interact naturally. It connects to GitHub’s AI inference API when online and continues to function autonomously when offline, thanks to its internal memory and mood systems. Everything is modular and customizable, allowing developers to change behavior, model parameters, or logic without altering the entire framework.
+Mem is a local AI framework designed to simulate a self-aware, adaptive assistant that can think, remember, and interact naturally. It connects to GitHub’s AI inference API when online and continues to function autonomously when offline, thanks to its internal memory and mood systems. Everything is modular and customizable, allowing developers to change behavior, model parameters, or logic without altering the entire framework.
 
 To begin, you’ll need Python 3.11 or newer installed on your computer. Open a terminal inside the project folder and create a virtual environment with the following commands:
 
@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 This installs all necessary packages for networking, asynchronous requests, memory storage, and sensor management.
 
-Mainmi communicates with GitHub’s AI inference service using a personal access token. To get one, log in to your GitHub account, open Developer Settings, go to Personal Access Tokens, and create a new token (classic or fine-grained). Make sure “read:packages” and “inference:write” permissions are enabled.
+Mem communicates with GitHub’s AI inference service using a personal access token. To get one, log in to your GitHub account, open Developer Settings, go to Personal Access Tokens, and create a new token (classic or fine-grained). Make sure “read:packages” and “inference:write” permissions are enabled.
 
 Once your token is created, set it as an environment variable so the system can use it securely without editing the code.
 
