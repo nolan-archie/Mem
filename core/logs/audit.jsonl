@@ -1,0 +1,59 @@
+{"ts": "2025-10-13T12:09:50.443891", "action": "api_request", "level": "info", "details": {"endpoint": "/health"}}
+{"ts": "2025-10-13T12:15:23.954507", "action": "api_request", "level": "info", "details": {"endpoint": "/health"}}
+{"ts": "2025-10-13T12:15:42.912594", "action": "api_request", "level": "info", "details": {"endpoint": "/mood"}}
+{"ts": "2025-10-13T12:21:18.883392", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:21:18.883736", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:21:39.422923", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:21:39.423238", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:24:11.709053", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:24:11.709295", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:24:21.694778", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:24:21.695157", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:27:10.294650", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:27:10.294830", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:27:19.324906", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:27:19.325213", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:30:52.774747", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:30:52.774961", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:31:10.083315", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:31:10.083502", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:33:11.565452", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:33:11.565706", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:33:34.030057", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:33:34.030263", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '401 Unauthorized' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"}}
+{"ts": "2025-10-13T12:35:23.750993", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:35:23.751153", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:35:42.560393", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '404 Not Found' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"}}
+{"ts": "2025-10-13T12:35:42.560776", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '404 Not Found' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"}}
+{"ts": "2025-10-13T12:36:38.416801", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:36:38.416980", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:37:21.831189", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '429 Too Many Requests' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T12:37:21.831484", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '429 Too Many Requests' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T12:43:35.947880", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:43:35.948580", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:44:16.849293", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '429 Too Many Requests' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T12:44:16.849707", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '429 Too Many Requests' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T12:48:50.429252", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:48:50.429501", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:49:13.602787", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '429 Too Many Requests' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T12:49:13.603194", "action": "api_error", "level": "error", "details": {"endpoint": "/chat", "err": "Model call failed after retries: Client error '429 Too Many Requests' for url 'https://models.github.ai/inference/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T12:53:25.154708", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 13}}
+{"ts": "2025-10-13T12:53:25.155037", "action": "chat_start", "level": "info", "details": {"user_input": "Hello Mainmi!"}}
+{"ts": "2025-10-13T12:53:58.782075", "action": "memory_add", "level": "info", "details": {"id": "7beb4e4c-9b1d-4a80-ab23-aec626ed28e6", "len": 19}}
+{"ts": "2025-10-13T12:53:58.812795", "action": "memory_add", "level": "info", "details": {"id": "c80e5d7a-edeb-44e1-8669-aca1db38d0bb", "len": 87}}
+{"ts": "2025-10-13T12:53:58.812946", "action": "chat_end", "level": "info", "details": {"reply": "\"Hello! \ud83c\udf20 Seen any good stars lately? The night sky\u2019s been whispering my name.\""}}
+{"ts": "2025-10-13T12:53:58.813030", "action": "api_response", "level": "info", "details": {"endpoint": "/chat", "ok": true}}
+{"ts": "2025-10-13T12:59:44.284237", "action": "api_request", "level": "info", "details": {"endpoint": "/memories/list"}}
+{"ts": "2025-10-13T13:08:00.337590", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 2}}
+{"ts": "2025-10-13T13:08:00.337911", "action": "chat_start", "level": "info", "details": {"user_input": "hi"}}
+{"ts": "2025-10-13T13:08:15.744063", "action": "memory_add", "level": "info", "details": {"id": "5ad682cc-a43f-47de-b359-6e9a7fe8786a", "len": 8}}
+{"ts": "2025-10-13T13:08:15.773668", "action": "memory_add", "level": "info", "details": {"id": "c1baaa38-e35b-4feb-9643-f38e2bab3894", "len": 69}}
+{"ts": "2025-10-13T13:08:15.773814", "action": "chat_end", "level": "info", "details": {"reply": "Hi there! \ud83c\udf0c Did the stars send you, or is this a coincidence?"}}
+{"ts": "2025-10-13T13:08:15.773901", "action": "api_response", "level": "info", "details": {"endpoint": "/chat", "ok": true}}
+{"ts": "2025-10-13T13:08:53.987034", "action": "api_request", "level": "info", "details": {"endpoint": "/chat", "text_len": 18}}
+{"ts": "2025-10-13T13:08:53.987421", "action": "chat_start", "level": "info", "details": {"user_input": "where are you from"}}
+{"ts": "2025-10-13T13:09:02.549871", "action": "model_call_fail", "level": "error", "details": {"err": "Client error '429 Too Many Requests' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"ts": "2025-10-13T13:09:02.585526", "action": "memory_add", "level": "info", "details": {"id": "ebf8656c-6066-4b22-9a4a-d20610aa66c2", "len": 24}}
+{"ts": "2025-10-13T13:09:02.631919", "action": "memory_add", "level": "info", "details": {"id": "0d0bf099-d543-42ac-95ba-fa22e5f0a067", "len": 158}}
+{"ts": "2025-10-13T13:09:02.632080", "action": "chat_end", "level": "info", "details": {"reply": "Trouble connecting: Model call failed after retries: Client error '429 Too Many Requests' for url 'h"}}
+{"ts": "2025-10-13T13:09:02.632171", "action": "api_response", "level": "info", "details": {"endpoint": "/chat", "ok": true}}

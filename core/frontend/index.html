@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mainmi Chat</title>
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+  <h1>Mainmi Chat</h1>
+  <textarea id="userInput" placeholder="Type a message..."></textarea>
+  <button onclick="sendMessage()">Send</button>
+  <div id="chatOutput"></div>
+
+  <script>
+    const chatOutput = document.getElementById('chatOutput');
+
+    async function sendMessage() {
+      const userInput = document.getElementById('userInput').value;
+      if (!userInput) return;
+
+      chatOutput.innerHTML += `<p><b>You:</b> ${userInput}</p>`;
+
+      // Call your local Python API
+      try {
+        const res = await fetch('http://localhost:5000/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: userInput })
+        });
+        const data = await res.json();
+        chatOutput.innerHTML += `<p><b>Mainmi:</b> ${data.reply}</p>`;
+      } catch (err) {
+        chatOutput.innerHTML += `<p style="color:red;">Error: ${err}</p>`;
+      }
+    }
+  </script>
+</body>
+</html>

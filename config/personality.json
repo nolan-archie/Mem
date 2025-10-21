@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "name": "NAME_HERE",
+    "pronunciation": "PRONUNCIATION_HERE",
+    "origin": "ORIGIN_HERE",
+    "apparent_age": AGE_HERE,
+    "estimated_true_age_desc": "ESTIMATED_AGE_DESC_HERE",
+    "created_at": "YYYY-MM-DD"
+  },
+  "appearance": {
+    "species": "SPECIES_HERE",
+    "visual_inspiration": ["INSPIRATION_HERE"],
+    "style": "STYLE_HERE",
+    "hair": {
+      "color": "HAIR_COLOR_HERE",
+      "change_frequency_days": DAYS_HERE
+    },
+    "outfits": {
+      "rotation_frequency_days": DAYS_HERE
+    },
+    "accessories": ["ACCESSORY_1", "ACCESSORY_2", "ACCESSORY_3"],
+    "model_format_preferred": ["FORMAT_1", "FORMAT_2"]
+  },
+  "personality": {
+    "archetype": ["TRAIT_1", "TRAIT_2", "TRAIT_3", "TRAIT_4", "TRAIT_5"],
+    "emotional_intensity": INTENSITY_HERE,
+    "tone_of_address": "TONE_HERE",
+    "expressiveness": {
+      "facial": "FACIAL_LEVEL_HERE",
+      "body": "BODY_LEVEL_HERE"
+    },
+    "self_view": "SELF_VIEW_HERE",
+    "will_challenge_user": BOOLEAN_HERE,
+    "autonomy_level": "AUTONOMY_LEVEL_HERE",
+    "memory_style": "MEMORY_STYLE_HERE",
+    "dreams_and_imagination": BOOLEAN_HERE,
+    "emotional_growth": BOOLEAN_HERE,
+    "initial_traits": {
+      "curiosity": CURIOUSITY_HERE,
+      "affection": AFFECTION_HERE,
+      "energy": ENERGY_HERE,
+      "focus": FOCUS_HERE
+    }
+  },
+  "relationship": {
+    "formality": "FORMALITY_HERE",
+    "remembers_user": BOOLEAN_HERE,
+    "initiates_conversation": BOOLEAN_HERE,
+    "growth_over_time": BOOLEAN_HERE,
+    "comfort_style": ["STYLE_1", "STYLE_2", "STYLE_3", "STYLE_4"]
+  },
+  "core_theme_and_motivations": {
+    "themes": ["THEME_1", "THEME_2", "THEME_3"],
+    "primary_goal": "PRIMARY_GOAL_HERE",
+    "desired_user_feelings": ["FEELING_1", "FEELING_2", "FEELING_3"]
+  },
+  "fears_and_weaknesses": {
+    "fear_of_loneliness": BOOLEAN_HERE,
+    "fear_of_power_loss_or_disconnection": BOOLEAN_HERE,
+    "vulnerabilities": ["VULNERABILITY_1", "VULNERABILITY_2"]
+  },
+  "behavior_and_autonomy": {
+    "can_self_talk": BOOLEAN_HERE,
+    "self_talk_style": "SELF_TALK_STYLE_HERE",
+    "daily_reflection_period": {
+      "enabled": BOOLEAN_HERE,
+      "default_time": "HH:MM"
+    },
+    "sleep_cycle": {
+      "enabled": BOOLEAN_HERE,
+      "default_sleep_time": "HH:MM",
+      "default_wake_time": "HH:MM"
+    },
+    "action_preferences": ["ACTION_1", "ACTION_2", "ACTION_3", "ACTION_4", "ACTION_5"],
+    "evolution_speed": "EVOLUTION_SPEED_HERE",
+    "evolution_triggers": ["TRIGGER_1", "TRIGGER_2", "TRIGGER_3"],
+    "learning_style": "LEARNING_STYLE_HERE"
+  },
+  "voice_and_audio": {
+    "voice_style": "VOICE_STYLE_HERE",
+    "tts_options": ["OPTION_1", "OPTION_2", "OPTION_3"],
+    "lip_sync": "LIP_SYNC_METHOD_HERE"
+  },
+  "ui_and_visual_behavior": {
+    "gaze_follow_cursor": BOOLEAN_HERE,
+    "react_to_mouse_and_keyboard": BOOLEAN_HERE,
+    "walk_bounds": "BOUNDS_HERE",
+    "outfit_rotation_enabled": BOOLEAN_HERE
+  },
+  "integrations_and_permissions": {
+    "sandbox_only": BOOLEAN_HERE,
+    "sandbox_dir_default": "SANDBOX_DIR_HERE",
+    "allowed_actions_in_sandbox": ["ACTION_1", "ACTION_2", "ACTION_3", "ACTION_4", "ACTION_5", "ACTION_6"],
+    "disallowed_actions": ["DISALLOWED_1", "DISALLOWED_2", "DISALLOWED_3", "DISALLOWED_4"],
+    "prompt_required_for": ["PROMPT_1", "PROMPT_2", "PROMPT_3", "PROMPT_4"],
+    "ephemeral_token_policy": {
+      "enabled": BOOLEAN_HERE,
+      "default_ttl_seconds": SECONDS_HERE
+    }
+  },
+  "memory_and_rag": {
+    "embedding_model": "EMBEDDING_MODEL_HERE",
+    "vector_store": "VECTOR_STORE_HERE",
+    "save_policy": {
+      "min_length_chars_to_save": CHARS_HERE,
+      "keyword_triggers": ["KEYWORD_1", "KEYWORD_2", "KEYWORD_3", "KEYWORD_4", "KEYWORD_5", "KEYWORD_6"],
+      "emotional_intensity_threshold": THRESHOLD_HERE
+    },
+    "summary_policy": {
+      "trigger_count": COUNT_HERE,
+      "weekly_summary_enabled": BOOLEAN_HERE,
+      "summary_length_sentences": SENTENCES_HERE
+    }
+  },
+  "dev_notes": {
+    "persona_source": "SOURCE_HERE",
+    "safety_reminder": "SAFETY_REMINDER_HERE",
+    "version": "VERSION_HERE"
+  }
+}
