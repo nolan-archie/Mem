@@ -51,8 +51,6 @@ Python 3.8+: Download Python
 
 Git: Download Git
 
-Node.js (for frontend development): Download Node.js
-
 1. Clone the Repository
 
 Start by cloning the Mem repository to your local machine:
@@ -89,52 +87,22 @@ pip install -r requirements.txt
 
 Create a .env file in the root directory and add the following:
 
-MAINMI_TOKEN=your_token_here
+GITHUB_TOKEN=your_token_here
 
 
 Replace your_token_here with a unique token for your setup.
 
-3. Set Up the Frontend (Optional)
-
-If you wish to run the frontend interface:
-
-3.1. Install Node.js Dependencies
-
-Navigate to the frontend directory:
-
-cd frontend
 
 
-Install the required Node.js packages:
 
-npm install
+3.Run the backend server:
 
-3.2. Run the Frontend
+python cli_chat.py
 
-Start the frontend development server:
-
-npm start
-
-
-The frontend will be accessible at http://localhost:3000.
-
-4. Run Mem
-4.1. Start the Backend Server
-
-Navigate back to the root directory:
-
-cd ..
-
-
-Run the backend server:
-
-python main.py
-
-4.2. Access Mem
+4. Access Mem
 
 CLI Interface: Interact with Mem directly through the command line.
 
-Web Interface: If you set up the frontend, access Mem via your web browser at http://localhost:3000.
 
 5. Customize Mem
 
