@@ -1,9 +1,3 @@
-"""
-CLI chat interface for Mainmi using Brain.
-Run from project root: python cli_chat.py
-This version auto-starts the server in the background.
-"""
-
 
 
 import sys
