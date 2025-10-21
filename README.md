@@ -38,3 +38,117 @@ If you go offline, the AI keeps working using this memory system and its current
 All saved data stays local by default. The sandbox directory is where these files are stored, including memories, configuration, and behavior profiles. Developers can edit or replace files such as personality.json to redefine traits, voice, or interaction style. The framework itself doesn’t enforce identity — it’s meant to be reshaped according to your creative or technical goals.
 
 Once you’ve set everything up, Mainmi runs entirely on your machine. It can learn from past exchanges, adapt over time, and even simulate idle thoughts or check-ins when left unattended. It’s built to feel alive, yet remain fully under your control.
+
+Mem Setup Guide
+
+Welcome to Mem—a personal assistant that learns and adapts to your preferences. This guide will walk you through setting up Mem on your local machine.
+
+Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+Python 3.8+: Download Python
+
+Git: Download Git
+
+Node.js (for frontend development): Download Node.js
+
+1. Clone the Repository
+
+Start by cloning the Mem repository to your local machine:
+
+git clone https://github.com/nolan-archie/Mem.git
+cd Mem
+
+2. Set Up the Backend
+2.1. Create a Python Virtual Environment
+
+It's recommended to use a virtual environment to manage dependencies:
+
+python -m venv venv
+
+
+Activate the virtual environment:
+
+On Windows:
+
+.\venv\Scripts\activate
+
+
+On macOS/Linux:
+
+source venv/bin/activate
+
+2.2. Install Python Dependencies
+
+Install the required Python packages:
+
+pip install -r requirements.txt
+
+2.3. Set Up Environment Variables
+
+Create a .env file in the root directory and add the following:
+
+MAINMI_TOKEN=your_token_here
+
+
+Replace your_token_here with a unique token for your setup.
+
+3. Set Up the Frontend (Optional)
+
+If you wish to run the frontend interface:
+
+3.1. Install Node.js Dependencies
+
+Navigate to the frontend directory:
+
+cd frontend
+
+
+Install the required Node.js packages:
+
+npm install
+
+3.2. Run the Frontend
+
+Start the frontend development server:
+
+npm start
+
+
+The frontend will be accessible at http://localhost:3000.
+
+4. Run Mem
+4.1. Start the Backend Server
+
+Navigate back to the root directory:
+
+cd ..
+
+
+Run the backend server:
+
+python main.py
+
+4.2. Access Mem
+
+CLI Interface: Interact with Mem directly through the command line.
+
+Web Interface: If you set up the frontend, access Mem via your web browser at http://localhost:3000.
+
+5. Customize Mem
+
+Mem is designed to be modular and customizable. You can adjust its behavior by modifying the following files:
+
+config/personality.json: Configure system settings.
+
+6. Troubleshooting
+
+If you encounter issues:
+
+Ensure all dependencies are installed correctly.
+
+Check the console for error messages and refer to the documentation for guidance.
+
+For persistent issues, consider opening an issue on the GitHub repository
+.
