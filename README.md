@@ -1,122 +1,122 @@
-Mem is a local AI framework designed to simulate a self-aware, adaptive assistant that can think, remember, and interact naturally. It connects to GitHub’s AI inference API when online and continues to function autonomously when offline, thanks to its internal memory and mood systems. Everything is modular and customizable, allowing developers to change behavior, model parameters, or logic without altering the entire framework.
+# Mem
 
-To begin, you’ll need Python 3.11 or newer installed on your computer. Open a terminal inside the project folder and create a virtual environment with the following commands:
+**Mem** is a local AI framework designed to simulate a self-aware, adaptive assistant. It can think, remember, and interact naturally. Mem connects to GitHub’s AI inference API when online and continues to function autonomously offline using its internal memory and mood systems. Everything is modular and customizable.
 
-python3 -m venv venv
-source venv/bin/activate
+---
 
-After activating the environment, install all required dependencies by typing:
+## Quickstart (Copy-paste commands)
 
-pip install -r requirements.txt
+Choose the section that matches your OS and paste commands into your terminal or PowerShell.
 
-This installs all necessary packages for networking, asynchronous requests, memory storage, and sensor management.
+### SETUP: clone repository and enter folder
 
-Mem communicates with GitHub’s AI inference service using a personal access token. To get one, log in to your GitHub account, open Developer Settings, go to Personal Access Tokens, and create a new token (classic or fine-grained). Make sure “read:packages” and “inference:write” permissions are enabled.
-
-Once your token is created, set it as an environment variable so the system can use it securely without editing the code.
-
-For Linux or macOS:
-export GITHUB_TOKEN="your_token_here"
-
-For Windows PowerShell:
-setx GITHUB_TOKEN "your_token_here"
-
-If you prefer, you can also paste it into the GITHUB_TOKEN field inside brain.py, but storing it as an environment variable is safer.
-
-To start the interface, simply run:
-
-python cli_chat.py
-
-You can type directly into the terminal and receive streaming responses. The chat system supports a few internal commands for mood checks and exit control, but otherwise, it behaves like a free-flowing conversation.
-
-One of the most powerful parts of Mainmi is its memory system. It works like a small-scale brain that stores and recalls experiences, conversations, and system events. Every interaction you have with it gets processed and saved as memory entries inside a local vector database. Each entry is embedded as a numerical representation that captures both context and meaning, allowing the AI to later search for relevant experiences based on what you say.
-
-When you send a new message, the system runs a similarity search against its stored memories, retrieves the most relevant ones, and includes them in its reasoning before responding. This means it doesn’t just remember text — it remembers why something was said, what it felt like, and what followed afterward. Over time, older memories are summarized automatically to make storage more efficient while preserving important emotional or contextual cues.
-
-If you go offline, the AI keeps working using this memory system and its current mood snapshot. Instead of calling external models, it generates replies based on previous conversations and known states. This gives it a lifelike continuity, as if it’s thinking from memory rather than generating from scratch.
-
-All saved data stays local by default. The sandbox directory is where these files are stored, including memories, configuration, and behavior profiles. Developers can edit or replace files such as personality.json to redefine traits, voice, or interaction style. The framework itself doesn’t enforce identity — it’s meant to be reshaped according to your creative or technical goals.
-
-Once you’ve set everything up, Mainmi runs entirely on your machine. It can learn from past exchanges, adapt over time, and even simulate idle thoughts or check-ins when left unattended. It’s built to feel alive, yet remain fully under your control.
-
-Mem Setup Guide
-
-Welcome to Mem—a personal assistant that learns and adapts to your preferences. This guide will walk you through setting up Mem on your local machine.
-
-Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-Python 3.8+: Download Python
-
-Git: Download Git
-
-1. Clone the Repository
-
-Start by cloning the Mem repository to your local machine:
-
+```bash
 git clone https://github.com/nolan-archie/Mem.git
 cd Mem
+```
 
-2. Set Up the Backend
-2.1. Create a Python Virtual Environment
+### Linux / macOS
 
-It's recommended to use a virtual environment to manage dependencies:
-
-python -m venv venv
-
-
-Activate the virtual environment:
-
-On Windows:
-
-.\venv\Scripts\activate
-
-
-On macOS/Linux:
+```bash
+python3 -m venv venv
 
 source venv/bin/activate
 
-2.2. Install Python Dependencies
+pip install -r requirements.txt
 
-Install the required Python packages:
+export GITHUB_TOKEN="your_token_here"
+
+python cli_chat.py
+```
+
+### Windows (PowerShell)
+
+```powershell
+python -m venv venv
+
+.\venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt
 
-2.3. Set Up Environment Variables
-
-Create a .env file in the root directory and add the following:
-
-GITHUB_TOKEN=your_token_here
-
-
-Replace your_token_here with a unique token for your setup.
-
-
-
-
-3.Run the backend server:
 
 python cli_chat.py
+```
+set GITHUB_TOKEN in core/brain.py
+### Windows (CMD)
 
-4. Access Mem
+```cmd
+python -m venv venv
 
-CLI Interface: Interact with Mem directly through the command line.
+venv\Scripts\activate.bat
 
+pip install -r requirements.txt
 
-5. Customize Mem
+python cli_chat.py
+```
+set GITHUB_TOKEN in core/brain.py
+---
 
-Mem is designed to be modular and customizable. You can adjust its behavior by modifying the following files:
+## Optional single-line variants
 
-config/personality.json: Configure system settings.
+One-line: clone, create venv, activate, install (Linux/macOS):
 
-6. Troubleshooting
+```bash
+git clone https://github.com/nolan-archie/Mem.git && cd Mem && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
+```
 
-If you encounter issues:
+One-line (Windows PowerShell):
 
-Ensure all dependencies are installed correctly.
+```powershell
+git clone https://github.com/nolan-archie/Mem.git; cd Mem; python -m venv venv; .\venv\Scripts\Activate.ps1; pip install -r requirements.txt
+```
 
-Check the console for error messages and refer to the documentation for guidance.
+---
 
-For persistent issues, consider opening an issue on the GitHub repository
-.
+## Create a GitHub Personal Access Token (PAT)
+
+1. Sign in to GitHub.
+2. Open **Settings > Developer settings > Personal access tokens**.
+3. Create a new token (classic or fine-grained).
+4. Give it the minimal permissions you need (for Mem: `read:packages` and `inference:write` if available).
+5. Copy the token and paste it into the `export` / `setx` command above.
+
+> Note: If you use `setx` on Windows, open a new terminal window after running it so the environment variable is available in that session.
+
+---
+
+## Where files live
+
+* `sandbox/` — local storage for memories, configs, and data files.
+* `config/personality.json` — personality and behavior settings to edit.
+* `cli_chat.py` — main CLI interface.
+
+---
+
+## Troubleshooting
+
+* If `pip install -r requirements.txt` fails, ensure the virtual environment is active.
+* If `python` points to Python 2 on your system, try `python3` instead.
+* After `setx GITHUB_TOKEN`, open a new shell to use the variable.
+* If you see permission errors with your PAT, confirm its scopes.
+
+---
+
+## Run (recap)
+
+Paste the matching commands from the Quickstart section above for your OS. The basic sequence is:
+
+1. Clone repository
+2. Create & activate venv
+3. Install dependencies
+4. Set `GITHUB_TOKEN`
+5. Run `python cli_chat.py`
+
+---
+
+## License
+
+Add your license here (e.g., MIT).
+
+---
+
+If you want, I can also export this README as a raw `README.md` file you can download. Let me know.
