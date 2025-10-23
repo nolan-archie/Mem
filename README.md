@@ -113,7 +113,7 @@ Paste the matching commands from the Quickstart section above for your OS. The b
 
 ---
 
-##License
+## License
 
 MIT License
 
